@@ -1,0 +1,641 @@
+/* Ant Design X 主题样式 */
+:root {
+  --ant-primary-color: #1677ff;
+  --ant-success-color: #52c41a;
+  --ant-warning-color: #faad14;
+  --ant-error-color: #ff4d4f;
+  --ant-font-size-base: 14px;
+  --ant-line-height-base: 1.5715;
+  --ant-border-radius-base: 6px;
+  --ant-shadow-1-up: 0 -6px 16px 0 rgba(0, 0, 0, 0.08), 0 -3px 6px -4px rgba(0, 0, 0, 0.12), 0 -9px 28px 8px rgba(0, 0, 0, 0.05);
+  --ant-shadow-1-down: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  --ant-shadow-1-left: -6px 0 16px 0 rgba(0, 0, 0, 0.08), -3px 0 6px -4px rgba(0, 0, 0, 0.12), -9px 0 28px 8px rgba(0, 0, 0, 0.05);
+  --ant-shadow-1-right: 6px 0 16px 0 rgba(0, 0, 0, 0.08), 3px 0 6px -4px rgba(0, 0, 0, 0.12), 9px 0 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* 自定义 Ant Design X 样式 */
+.antd-x-layout {
+  width: 100%;
+  min-width: 1000px;
+  height: 100vh;
+  display: flex;
+  background: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.antd-x-sider {
+  background: rgba(240, 242, 245, 0.5);
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12px;
+  box-sizing: border-box;
+  border-right: 1px solid #f0f0f0;
+}
+
+.antd-x-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 24px;
+  box-sizing: border-box;
+  gap: 8px;
+  margin: 24px 0;
+}
+
+.antd-x-logo span {
+  font-weight: bold;
+  color: #262626;
+  font-size: 16px;
+}
+
+.antd-x-add-btn {
+  background: rgba(22, 119, 255, 0.06);
+  border: 1px solid rgba(22, 119, 255, 0.2);
+  height: 40px;
+  border-radius: 8px;
+}
+
+.antd-x-conversations {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.antd-x-sider-footer {
+  border-top: 1px solid #f0f0f0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+.antd-x-chat {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+}
+
+.antd-x-chat-list {
+  flex: 1;
+  overflow: auto;
+  padding: 0 calc((100% - 700px) / 2);
+}
+
+.antd-x-sender {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.antd-x-sender-prompt {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.antd-x-welcome {
+  padding-top: 32px;
+}
+
+.antd-x-bubble-loading {
+  background-image: linear-gradient(90deg, #ff6b23 0%, #af3cb8 31%, #53b6ff 89%);
+  background-size: 100% 2px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.antd-x-prompt-card {
+  background-image: linear-gradient(123deg, #e5f4ff 0%, #efe7ff 100%);
+  border-radius: 12px;
+  border: none;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.antd-x-prompt-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.setting-item h3 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.setting-desc {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.about-section h2 {
+  margin-bottom: 16px;
+}
+
+.about-section h3 {
+  margin-bottom: 12px;
+}
+
+.about-section ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.welcome-content h2 {
+  margin: 0 0 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.welcome-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.prompt-section h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.prompt-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.prompt-title {
+  font-weight: 500;
+}
+
+.prompt-description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.message-text {
+  line-height: 1.6;
+}
+
+.message-time {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.md-editor{
+    background-color: transparent !important;
+}
+
+/* Markdown 内容样式优化 */
+.markdown-content .md-editor-preview {
+  background: transparent !important;
+  color: inherit !important;
+  padding: 0 !important;
+}
+
+.markdown-content .md-editor-preview-wrapper {
+  padding: 0 !important;
+}
+
+.markdown-content .md-editor-preview h1,
+.markdown-content .md-editor-preview h2,
+.markdown-content .md-editor-preview h3,
+.markdown-content .md-editor-preview h4,
+.markdown-content .md-editor-preview h5,
+.markdown-content .md-editor-preview h6 {
+  color: inherit !important;
+  margin: 0.5em 0 !important;
+}
+
+.markdown-content .md-editor-preview p {
+  color: inherit !important;
+  margin: 0.5em 0 !important;
+  line-height: 1.6 !important;
+}
+
+.markdown-content .md-editor-preview code {
+  background: rgba(0, 0, 0, 0.1) !important;
+  padding: 2px 4px !important;
+  border-radius: 3px !important;
+  font-size: 0.9em !important;
+}
+
+.dark .markdown-content .md-editor-preview code {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.markdown-content .md-editor-preview pre {
+  background: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 6px !important;
+  padding: 12px !important;
+  margin: 8px 0 !important;
+  overflow-x: auto !important;
+}
+
+.dark .markdown-content .md-editor-preview pre {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.markdown-content .md-editor-preview blockquote {
+  border-left: 4px solid #1677ff !important;
+  padding-left: 12px !important;
+  margin: 8px 0 !important;
+  color: inherit !important;
+  background: rgba(22, 119, 255, 0.05) !important;
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.markdown-content .md-editor-preview ul,
+.markdown-content .md-editor-preview ol {
+  padding-left: 20px !important;
+  margin: 8px 0 !important;
+}
+
+.markdown-content .md-editor-preview li {
+  margin: 4px 0 !important;
+  color: inherit !important;
+}
+
+.markdown-content .md-editor-preview table {
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 8px 0 !important;
+}
+
+.markdown-content .md-editor-preview th,
+.markdown-content .md-editor-preview td {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  padding: 8px 12px !important;
+  text-align: left !important;
+}
+
+.dark .markdown-content .md-editor-preview th,
+.dark .markdown-content .md-editor-preview td {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.markdown-content .md-editor-preview th {
+  background: rgba(0, 0, 0, 0.05) !important;
+  font-weight: 600 !important;
+}
+
+.dark .markdown-content .md-editor-preview th {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* 深色主题适配 */
+.dark {
+  --ant-primary-color: #1677ff;
+  --ant-success-color: #52c41a;
+  --ant-warning-color: #faad14;
+  --ant-error-color: #ff4d4f;
+}
+
+/* 深色主题 - 主布局 */
+.dark .antd-x-layout {
+  background: #0f0f0f !important;
+  color: #ffffff !important;
+}
+
+/* 深色主题 - 侧边栏 */
+.dark .antd-x-sider {
+  background: #1a1a1a !important;
+  border-right: 1px solid #2a2a2a !important;
+}
+
+.dark .antd-x-logo span {
+  color: #ffffff !important;
+}
+
+.dark .antd-x-add-btn {
+  background: rgba(22, 119, 255, 0.15) !important;
+  border: 1px solid rgba(22, 119, 255, 0.3) !important;
+  color: #ffffff !important;
+}
+
+.dark .antd-x-sider-footer {
+  border-top: 1px solid #2a2a2a !important;
+}
+
+/* 深色主题 - 对话列表 */
+.dark .conversation-item {
+  color: #ffffff !important;
+}
+
+.dark .conversation-item:hover {
+  background-color: #2a2a2a !important;
+}
+
+.dark .conversation-item.active {
+  background-color: #1e3a5f !important;
+  border-left: 3px solid #1677ff !important;
+}
+
+.dark .group-title {
+  color: #999999 !important;
+}
+
+.dark .conversation-title {
+  color: #ffffff !important;
+}
+
+.dark .conversation-time {
+  color: #999999 !important;
+}
+
+/* 深色主题 - 聊天区域 */
+.dark .antd-x-chat {
+  background: #0f0f0f !important;
+}
+
+.dark .antd-x-chat-list {
+  background: #0f0f0f !important;
+}
+
+/* 深色主题 - 欢迎页面 */
+.dark .welcome-card {
+  background: #1a1a1a !important;
+  border: 1px solid #2a2a2a !important;
+}
+
+.dark .welcome-content h2 {
+  color: #ffffff !important;
+}
+
+.dark .welcome-content p {
+  color: #999999 !important;
+}
+
+.dark .prompt-section h3 {
+  color: #ffffff !important;
+}
+
+.dark .antd-x-prompt-card {
+  background: #1a1a1a !important;
+  border: 1px solid #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.dark .antd-x-prompt-card:hover {
+  background: #2a2a2a !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark .prompt-title {
+  color: #ffffff !important;
+}
+
+.dark .prompt-description {
+  color: #cccccc !important;
+}
+
+/* 深色主题 - 消息气泡 */
+.dark .message-bubble {
+  background: #1a1a1a !important;
+  border: 1px solid #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.dark .message-user .message-bubble {
+  background: #1677ff !important;
+  color: white !important;
+  border-color: #1677ff !important;
+}
+
+.dark .message-text {
+  color: #ffffff !important;
+}
+
+.dark .message-time {
+  color: #999999 !important;
+}
+
+/* 深色主题 - 输入框 */
+.dark .chat-input-container {
+  background: #0f0f0f !important;
+}
+
+.dark .prompt-tag {
+  background: #1a1a1a !important;
+  border: 1px solid #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.dark .prompt-tag:hover {
+  background: #2a2a2a !important;
+  border-color: #1677ff !important;
+  color: #1677ff !important;
+}
+
+/* 深色主题 - 设置页面特定样式 */
+.dark .setting-item h3 {
+  color: #ffffff !important;
+}
+
+.dark .setting-desc {
+  color: #999999 !important;
+}
+
+.dark .about-section h2 {
+  color: #ffffff !important;
+}
+
+.dark .about-section h3 {
+  color: #ffffff !important;
+}
+
+.dark .about-section p {
+  color: #ffffff !important;
+}
+
+.dark .about-section li {
+  color: #ffffff !important;
+}
+
+/* 深色主题 - Ant Design 组件覆盖 */
+.dark .ant-input {
+  background: #1a1a1a !important;
+  border-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.dark .ant-input:focus,
+.dark .ant-input-focused {
+  border-color: #1677ff !important;
+  box-shadow: 0 0 0 2px rgba(22, 119, 255, 0.2) !important;
+}
+
+.dark .ant-input-affix-wrapper {
+  background: #1a1a1a !important;
+  border-color: #2a2a2a !important;
+}
+
+.dark .ant-input-affix-wrapper:focus,
+.dark .ant-input-affix-wrapper-focused {
+  border-color: #1677ff !important;
+  box-shadow: 0 0 0 2px rgba(22, 119, 255, 0.2) !important;
+}
+
+.dark .ant-btn {
+  background: #1a1a1a !important;
+  border-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.dark .ant-btn:hover {
+  background: #2a2a2a !important;
+  border-color: #1677ff !important;
+}
+
+.dark .ant-btn-primary {
+  background: #1677ff !important;
+  border-color: #1677ff !important;
+}
+
+.dark .ant-btn-primary:hover {
+  background: #0958d9 !important;
+  border-color: #0958d9 !important;
+}
+
+.dark .ant-list-item {
+  border-bottom: 1px solid #2a2a2a !important;
+}
+
+.dark .ant-list-item-meta-title {
+  color: #ffffff !important;
+}
+
+.dark .ant-list-item-meta-description {
+  color: #999999 !important;
+}
+
+.dark .ant-avatar {
+  background: #1677ff !important;
+}
+
+.dark .ant-modal-content {
+  background: #1a1a1a !important;
+}
+
+.dark .ant-modal-header {
+  background: #1a1a1a !important;
+  border-bottom: 1px solid #2a2a2a !important;
+}
+
+.dark .ant-modal-title {
+  color: #ffffff !important;
+}
+
+.dark .ant-modal-body {
+  background: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+.dark .ant-modal-footer {
+  background: #1a1a1a !important;
+  border-top: 1px solid #2a2a2a !important;
+}
+
+.dark .ant-tabs-tab {
+  color: #999999 !important;
+}
+
+.dark .ant-tabs-tab-active {
+  color: #1677ff !important;
+}
+
+.dark .ant-tabs-content-holder {
+  background: #1a1a1a !important;
+}
+
+.dark .ant-form-item-label > label {
+  color: #ffffff !important;
+}
+
+.dark .ant-select-selector {
+  background: #1a1a1a !important;
+  border-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.dark .ant-select-arrow {
+  color: #ffffff !important;
+}
+
+.dark .ant-textarea {
+  background: #1a1a1a !important;
+  border-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.dark .ant-slider-rail {
+  background: #2a2a2a !important;
+}
+
+.dark .ant-slider-track {
+  background: #1677ff !important;
+}
+
+.dark .ant-slider-handle {
+  border-color: #1677ff !important;
+}
+
+.dark .ant-input-number {
+  background: #1a1a1a !important;
+  border-color: #2a2a2a !important;
+  color: #ffffff !important;
+}
+
+.dark .ant-radio-wrapper {
+  color: #ffffff !important;
+}
+
+.dark .ant-switch {
+  background: #2a2a2a !important;
+}
+
+.dark .ant-switch-checked {
+  background: #1677ff !important;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .antd-x-layout {
+    min-width: auto;
+  }
+  
+  .antd-x-sider {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .antd-x-sider.open {
+    transform: translateX(0);
+  }
+  
+  .antd-x-chat {
+    padding: 16px;
+  }
+  
+  .antd-x-chat-list {
+    padding: 0 16px;
+  }
+}
